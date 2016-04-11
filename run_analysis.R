@@ -56,5 +56,5 @@ names(allData) <- gsub("Mag", "Magnitude", names(allData))
 names(allData) <- gsub("^f", "Frequency", names(allData))
 names(allData) <- gsub("BodyBody", "Body", names(allData))
 
-##Creates a second, independent tidy dataset with the average of each variable for each activity and each subject
+#Creates a second, independent tidy dataset with the average of each variable for each activity and each subject
 write.table(allData,"NewData.txt",row.name=FALSE)
